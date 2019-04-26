@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "author": "Nahuel Fumero <nahuel.fumero@gmail.com>",
   "license": "MIT",
+  "repository": "nahue-f/require-fmodules",
   "description": "Helper to require modules using index.js folder pattern",
   "dependencies": {},
   "scripts": {
