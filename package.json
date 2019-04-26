@@ -1,0 +1,11 @@
+{
+  "name": "require-fmodules",
+  "version": "1.0.0",
+  "author": "Nahuel Fumero <nahuel.fumero@gmail.com>",
+  "license": "MIT",
+  "description": "Helper to require modules using index.js folder pattern",
+  "dependencies": {},
+  "scripts": {
+    "test": "node test/test.js"
+  }
+}
