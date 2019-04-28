@@ -8,7 +8,7 @@ Helper to ease the use of `index.js` to export modules using .js files or index.
 
 # Installation
 ```sh
-npm i  require-indexjs
+npm i require-indexjs
 ```
 
 # Usage
