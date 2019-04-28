@@ -76,11 +76,13 @@ You get an object containing every module exported in folder tree structure:
 }
 ```
 
-> Tip
-When required you could apply destructuring like this:
-`const { classes, data } = require(./src)`
-`const { DbHelper, Parser, modules } = classes`
-`const { augmenter } = modules`
+#### Tip
+_When required you could apply destructuring like this:_
+```js
+const { classes, data } = require(./src)
+const { DbHelper, Parser, modules } = classes
+const { augmenter } = modules
+```
 
 # File types/extensions
 
