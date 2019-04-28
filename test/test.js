@@ -1,18 +1,16 @@
 'use strict'
 
 const assert = require('assert')
-const modules = require('./')
+const modulesFolder = require('./mocks/modules')
 
 assert.deepStrictEqual(
-  modules,
+  modulesFolder,
   {
-    classes: {
-      FirstClass: require('./classes/FirstClass')
-    },
-    modules: {
-      firstModule: require('./modules/firstModule'),
-      secondModule: require('./modules/secondModule')
-    }
+    firstModule: require('./mocks/modules/firstModule'),
+    secondModule: require('./mocks/modules/secondModule'),
+    mockFile: require('./mocks/modules/mockFile.js'),
+    jsonMock: require('./mocks/modules/jsonMock.json')
   }
 )
-console.log('\nAll tests have passed!')
+
+console.log('\nTests have passed!')
