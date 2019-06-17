@@ -16,10 +16,12 @@ module.exports = function requireModules () {
   fetched.forEach(item => {
     const itemsPath = `${parentDir}/${item}`
 
-    // Skip if it's a file with unwanted extension. Or calling file.
+    // Skip if it's a file with unwanted extension (or hidden) or calling file.
     const extension = path.extname(itemsPath)
-    if (!allowedExtensions.includes(extension)) return
-    if (itemsPath === ownPath) return
+    if (!allowedExtensions.includes(extension) ||
+      item.charAt(0) === '.' ||
+      itemsPath === ownPath
+    ) return
 
     // Remove extensions to use as key.
     const noExtItem = path.basename(itemsPath, extension)
