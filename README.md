@@ -1,4 +1,4 @@
-![GitHub package.json version](https://img.shields.io/github/package-json/v/nahue-f/require-indexjs.svg)
+![GitHub release](https://img.shields.io/github/release/nahue-f/require-indexjs.svg)
 ![GitHub repo size](https://img.shields.io/github/repo-size/nahue-f/require-indexjs.svg)
 ![dependencies](https://img.shields.io/badge/dependencies-0-blue.svg)
 
