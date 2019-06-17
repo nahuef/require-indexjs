@@ -26,8 +26,10 @@ module.exports = function requireModules () {
     // Remove extensions to use as key.
     const noExtItem = path.basename(itemsPath, extension)
 
-    // Collect module's exports.
-    toExport[noExtItem] = require(itemsPath)
+    // Collect module's exports (if any).
+    try {
+      toExport[noExtItem] = require(itemsPath)
+    } catch (e) {}
   })
 
   return toExport
