@@ -11,9 +11,12 @@ assert.deepStrictEqual(
     },
     modules: {
       firstModule: require('./mocks/modules/firstModule'),
+      'have-hyphen':require('./mocks/modules/have-hyphen'),
+      haveHyphen: require('./mocks/modules/have-hyphen'),
       secondModule: require('./mocks/modules/secondModule'),
-      jsonMock: require('./mocks/modules/jsonMock.json'),
-      mockFile: require('./mocks/modules/mockFile.js')
+      jsonMock: require('./mocks/modules/jsonMock'),
+      noFolder: require('./mocks/modules/noFolder'),
+      mockFile: require('./mocks/modules/mockFile')
     },
     noExport: {}
   }
